@@ -15,7 +15,6 @@ int main(void)
 
 	{
 		if (abc != 'e' && abc != 'q')
-			
 			putchar(abc);
 		abc++;
 	}
