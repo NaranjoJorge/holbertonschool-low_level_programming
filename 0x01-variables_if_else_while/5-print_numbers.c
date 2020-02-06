@@ -1,6 +1,22 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- * main - prints: with proper grammar, but the outcome is a piece of art,
+ * main - prints numbers from 0 to 9
  * Return: 0
  */
+
+int main(void)
+{
+	int number = 0;
+
+	while (number < 10)
+
+	{
+		printf("%d", number);
+		number++;
+	}
+	putchar('\n');
+	return (0);
+}
