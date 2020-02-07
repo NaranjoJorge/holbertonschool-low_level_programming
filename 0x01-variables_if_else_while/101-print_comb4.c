@@ -7,15 +7,13 @@
 
 int main(void)
 {
-	int i = 48;
-	int j = i + 1;
-	int k = j + 1;
+	int i, j, k;
 
-	for (; i < 58; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for ( ; j < 58; j++)
+		for (j = i + 1; j < 58; j++)
 		{
-			for (; k < 58; k++)
+			for (k = j + 1; k < 58; k++)
 			{
 				putchar(i);
 				putchar(j);
@@ -25,8 +23,6 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
