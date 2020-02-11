@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char a[10] = {'h', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n', '\0'};
+	char a[] = {"holberton"};
 	int i = 0;
 	char b;
 
