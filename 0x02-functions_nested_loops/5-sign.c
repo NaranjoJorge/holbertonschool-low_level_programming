@@ -17,14 +17,15 @@ int print_sign(int n)
 	{
 		_putchar ('-');
 		return (-1);
-	} else
+	} else if (n == 0)
 	{
 		_putchar ('0');
 		return (0);
 	}
+	return (0);
 }
 
-
+/*Line 20, else is not generally useful after break or return */
 /* Maybe add case for when argument is not a number. */
 
 /*
