@@ -16,7 +16,7 @@ void times_table(void)
 		while (b < 10)
 		{
 			p = a * b;
-			if (p < 10)
+			if (p < 9)
 			{
 				_putchar (p + '0');
 				_putchar (',');
@@ -25,12 +25,11 @@ void times_table(void)
 
 			}
 
-			if (p > 10)
+			if (p >= 9)
 			{
 				_putchar ((p / 10) + '0');
 				_putchar ((p % 10) + '0');
 				_putchar (',');
-				_putchar (' ');
 				_putchar (' ');
 			}
 			b++;
