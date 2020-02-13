@@ -20,5 +20,7 @@ void print_line(int n)
 			_putchar (95);
 			a++;
 		}
-	} _putchar ('\n');
+
+		_putchar ('\n');
+	}
 }
