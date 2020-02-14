@@ -1,31 +1,34 @@
 #include "holberton.h"
 
-/**                                                            
- * print_square - Prints a # of size '@size' if n > 0.         
- * @size: Integer                                              
- * Return: void.                                               
+/**
+ * print_triangle - Prints a triangle.
+ * @size: Integer
+ * Return: void.
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
-        int a;
+	int a, b;
 
-        if (size <= 0)
-                _putchar ('\n');
+	while (size > 0)
+	{
+		a = 1;
+		while ((size - a) > 0)
+		{
+			_putchar (' ');
+			a++;
+		}
 
-        else
-        {
-                while (size > 0)
-                {
-                        a = size;
-                        while (a > 0)
-                        {
-                                _putchar (35);
-                                a--;
-                        }
-                        _putchar ('\n');
-                        size--;
-                }
-                _putchar('\n');
-        }
+		b = 1;
+		while ((b + a) <= size)
+		{
+			_putchar(35);
+			b++;
+		}
+		size--;
+		_putchar('\n');
+	}
+
+	if (size <= 0)
+		_putchar ('\n');
 }
