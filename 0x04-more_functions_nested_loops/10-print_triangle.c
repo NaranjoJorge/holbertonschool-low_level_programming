@@ -20,10 +20,11 @@ void print_triangle(int size)
 		}
 
 		b = 1;
-		while ((b + a) <= size)
+		while ((size - (size - b)) >= 1)
 		{
 			_putchar(35);
-			b++;
+			/*b++;*/
+			b--;
 		}
 		size--;
 		_putchar('\n');
