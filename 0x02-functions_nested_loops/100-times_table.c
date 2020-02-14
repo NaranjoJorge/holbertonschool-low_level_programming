@@ -1,0 +1,58 @@
+#include "holberton.h"
+
+/**
+ * print_times_table - Prints n times table starting at 0.
+ * @n: Integer
+ * Return: void
+ */
+
+void print_times_table(int n)
+{
+	int product;
+	int a = 0;
+
+	if (n > 15 || n < 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		while (a <= n)
+		{
+			product = n * a;
+
+			if (product <= 9 && n == a)
+			{
+				_putchar(a + '0');
+				_putchar('\n');
+				a++;
+			}
+			else if (product <= 9)
+			{
+				_putchar(a + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				a++;
+			}
+			else if (product > 9 && n == a)
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+				_putchar('\n');
+				a++;
+			}
+			else
+			{
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				a++;
+			}
+		}
+	}
+}
