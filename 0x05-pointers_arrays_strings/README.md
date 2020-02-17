@@ -1,0 +1,1 @@
+Project with task regarding pointer & arrays in C language.
