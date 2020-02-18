@@ -1,5 +1,10 @@
 #include "holberton.h"
-/* */
+
+/**
+ * _puts - Prints string str.
+ * @str: char *str
+ * Return: void.
+ */
 
 
 void _puts(char *str)
