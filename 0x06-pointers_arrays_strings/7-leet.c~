@@ -1,0 +1,21 @@
+#include "holberton.h"
+
+/**
+ * cap_string - Capitalizes letters coming after separators & 1st letter.
+ * @s: char *s.
+ * Return: s.
+ */
+
+char *leet(char *s)
+{
+	int i, a;
+
+	char letters[] = "aAeEoOtTlL";
+	char numbers[] = "4433007711";
+
+	for (i = 0; *(s + i) != '\0'; i++)
+		for (a = 0; *(letters + a) != '\0'; a++)
+			if (*(s + i) == *(letters + a))
+				*(s + i) = *(numbers + a);
+	return (s);
+}
