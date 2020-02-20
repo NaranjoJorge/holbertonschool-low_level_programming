@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * cap_string - Capitalizes all words of a string.
+ * cap_string - Capitalizes letters coming after separators & 1st letter.
  * @s: char *s.
  * Return: s.
  */
