@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ * _strncat - Copies n chars of src to dest.
+ * @dest: char *dest
+ * @src: char *src
+ * @n: int n
+ * Return: dest
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	
+}
