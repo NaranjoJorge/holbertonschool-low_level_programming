@@ -14,6 +14,8 @@ char *cap_string(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
+		if (*(s + i) == '\t')
+			*(s + i) = ' ';
 		if ((*(s + i) >= 97) && (*(s + i) <= 122))
 			for (b = 0; *(separator + b) != '\0'; b++)
 				if (*(s + (i - 1)) == *(separator + b))
