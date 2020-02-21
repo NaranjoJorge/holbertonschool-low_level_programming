@@ -1,0 +1,20 @@
+#include "holberton.h"
+
+
+
+
+char *leet(char *s)
+{
+        int i, a;
+
+        char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVW
+XYZ";
+        char root13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	for (i = 0; *(s + i) != '\0'; i++)
+		for (a = 0; *(alphabet + a) != '\
+\0'; a++)
+			if (*(s + i) == *(alphabet + a))
+				*(s + i) = *(root13);
+	return (s);
+}
