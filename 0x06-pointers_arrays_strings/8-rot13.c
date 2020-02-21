@@ -13,8 +13,12 @@ char *rot13(char *s)
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; *(s + i) != '\0'; i++)
+	{
 		for (a = 0; *(alpha + a) != '\0'; a++)
+		{
 			if (*(s + i) == *(alpha + a))
 				*(s + i) = *(rot13 + a);
+		}
+	}
 	return (s);
 }
