@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stddef.h>
+
 /**
  * _strchr -Locates c in s.
  * @s:int char pointer
@@ -10,12 +10,15 @@
 
 char *_strchr(char *s, char c)
 {
-	int pos = 0;
 
-	for (; *(s + pos) != '\0'; pos++)
+	for (; *s != '\0'; s++)
 	{
-		if (*(s + pos) == c)
-			return ((s + pos));
+		if (*s == c)
+			return (s);
 	}
+
+	if (*s == c)
+		return (s);
+
 	return (0);
 }

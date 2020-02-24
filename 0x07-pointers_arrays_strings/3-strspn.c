@@ -10,6 +10,10 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
+
+	/* accept = oleh */
+	/* s = hello world */
+
 	int i, a;
 
 	unsigned int k = 0;

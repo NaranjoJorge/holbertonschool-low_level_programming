@@ -11,7 +11,7 @@ int main(void)
 	char *s = "Armadillo";
 	char *f;
 
-	f = _strchr(s, 'w');
+	f = _strchr(s, 0);
 
 	if (f != NULL)
 	{
