@@ -12,22 +12,21 @@ unsigned int _strspn(char *s, char *accept)
 {
 
 	/* accept = oleh */
-	/* s = hello world */
+	/* s = hello, world */
 	int i, a;
 
-	unsigned int k = 0;
-
-	for (i = 0; *(accept + i) != '\0'; i++)
+	for (i = 0; s[i]; i++)
 	{
-		for (a = 0; *(s + a) != '\0'; a++)
-			if (*(accept + i) == *(s + a))
-			{
-				k += 1;
+		for (a = 0; accept[a]; a++)
+		{
+			if (s[i] == accept[a])
 				break;
-			}
+		}
+
+		if (accept[a] == 0)
+			break;
+
 	}
 
-	k += 1;
-
-	return (k);
+	return (i);
 }
