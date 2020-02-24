@@ -12,15 +12,17 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i, a;
 
-	for (i = 0; *(s + i) != '\0'; i++)
-
-		for (a = 0; *(accept + a) != '\0'; a++)
-
-			if (*(s + i) == *(accept + a))
-			{
-				*s = *(s + i);
+	for (i = 0; s[i]; i++)
+	{
+		for (a = 0; accept[a]; a++)
+		{
+			if (s[i] == accept[a])
 				break;
-			}
+		}
 
-	return (s);
+		if (accept[a])
+			return (s + i);
+	}
+
+	return (0);
 }
