@@ -1,0 +1,21 @@
+#include "holberton.h"
+
+/**
+ * _memcpy - Copies n-bytes from src to dest
+ * @dest:char pointer
+ * @src:char pointer
+ * @n:Integer
+ * Return: dest
+ */
+
+
+int factorial(int n)
+{
+	if (n < 0)
+		return -1;
+
+	if (n == 0)
+		return 1;
+
+	return (n * factorial(n - 1));
+}
