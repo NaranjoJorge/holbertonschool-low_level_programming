@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+ * puts_half - Prints second half of string str.
+ * @str: char *str
+ * Return: Void.
+ */
+
+int _atoi(char s)
+{
+	return (s);
+}

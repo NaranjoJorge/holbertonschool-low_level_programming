@@ -1,0 +1,1 @@
+Project that creates a static library call libholberton.a

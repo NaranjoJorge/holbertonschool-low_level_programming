@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ * empty - Returns a
+ * @a:char
+ * Return: a
+ */
+
+char *_strstr(char *haystack, char *needle)
+{
+	
+}
+
+/* I had this function empty so I just copied what the char *_strcat() does */
