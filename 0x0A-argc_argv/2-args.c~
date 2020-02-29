@@ -1,0 +1,12 @@
+/**
+ * main - Prints # of arguments passed to the program.
+ * @argv: array of pointers to program arguments. argv[0] being
+ * the program name.
+ * @argc: Number of arguments.
+ * Return: 0.
+ */
+
+int main(int argc, char **argv)
+{
+	
+}
