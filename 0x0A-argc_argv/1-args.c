@@ -9,21 +9,24 @@
  * Return: 0.
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	(void)argv;
 	int i;
 	int counter = 0;
+	(void)**argv;
 
 	if (argc == 1)
 		printf("%d\n", counter);
-
-	for (i = 0; i < argc; i++)
+	else
 	{
-		counter += 1;
-	}
 
-	printf("%d\n", counter);
+		for (i = 1; i < argc; i++)
+		{
+			counter += 1;
+		}
+
+		printf("%d\n", counter);
+	}
 
 	return (0);
 }
