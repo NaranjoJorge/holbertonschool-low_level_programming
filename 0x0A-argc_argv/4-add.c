@@ -27,11 +27,10 @@ int main(int argc, char **argv)
 		{
 			printf("Error\n");
 		        return (0);
+		} else {
+			sum += atoi(argv[i]);
 		}
 	}
-
-	for (i = 1; i < argc; i++)
-		sum += atoi(argv[i]);
 
 	printf("%d\n", sum);
 
