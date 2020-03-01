@@ -15,12 +15,23 @@ int main(int argc, char **argv)
 	int sum = 0;
 
 	if (argc < 3)
+	{
 		printf("%d\n", sum);
+		return (0);
+	}
+
 
 	for (i = 1; i < argc; i++)
 	{
-		sum += atoi(argv[i]);
+		if (**(argv + i) < 48 || **(argv + i) > 57)
+		{
+			printf("Error\n");
+		        return (0);
+		}
 	}
+
+	for (i = 1; i < argc; i++)
+		sum += atoi(argv[i]);
 
 	printf("%d\n", sum);
 
