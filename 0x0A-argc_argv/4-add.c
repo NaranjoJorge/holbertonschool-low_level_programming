@@ -26,10 +26,10 @@ int main(int argc, char **argv)
 		if (**(argv + i) < 48 || **(argv + i) > 57)
 		{
 			printf("Error\n");
-		        return (0);
-		} else {
-			sum += atoi(argv[i]);
+			return (0);
 		}
+
+		sum += atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
