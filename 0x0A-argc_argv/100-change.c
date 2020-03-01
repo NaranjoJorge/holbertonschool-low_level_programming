@@ -15,8 +15,8 @@ int main(int argc, char **argv)
 {
 	int counter;
 	int cents = atoi(argv[1]);
-
-	if (argc < 2 || argc >= 3)
+/*argc != 2*/
+	if (argc < 2 || argc > 2)
 		return (0);
 
 	while (cents / 25)
