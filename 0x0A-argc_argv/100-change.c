@@ -43,9 +43,12 @@ int main(int argc, char **argv)
 			counter += 1;
 			cents = cents - 1;
 		}
-	} else
+	}
+
+	if (argc != 2)
 	{
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
 	printf("%d\n", counter);
 	return (0);
