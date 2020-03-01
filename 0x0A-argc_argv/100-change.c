@@ -15,41 +15,38 @@ int main(int argc, char **argv)
 {
 	int counter;
 	int cents = atoi(argv[1]);
-/*argc != 2*/
-	if (argc < 2 || argc > 2)
+
+	if (argc == 2)
+	{
+		while (cents / 25)
+		{
+			counter += 1;
+			cents = cents - 25;
+		}
+		while (cents / 10)
+		{
+			counter += 1;
+			cents = cents - 10;
+		}
+		while (cents / 5)
+		{
+			counter += 1;
+			cents = cents - 5;
+		}
+		while (cents / 2)
+		{
+			counter += 1;
+			cents = cents - 2;
+		}
+		while (cents / 1)
+		{
+			counter += 1;
+			cents = cents - 1;
+		}
+	} else
+	{
 		return (0);
-
-	while (cents / 25)
-	{
-		counter += 1;
-		cents = cents - 25;
 	}
-
-	while (cents / 10)
-	{
-		counter += 1;
-		cents = cents - 10;
-	}
-
-	while (cents / 5)
-	{
-		counter += 1;
-		cents = cents - 5;
-	}
-
-	while (cents / 2)
-	{
-		counter += 1;
-		cents = cents - 2;
-	}
-
-	while (cents / 1)
-	{
-		counter += 1;
-		cents = cents - 1;
-	}
-
 	printf("%d\n", counter);
-
 	return (0);
 }
