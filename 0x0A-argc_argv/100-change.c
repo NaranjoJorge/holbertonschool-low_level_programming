@@ -14,8 +14,10 @@
 int main(int argc, char **argv)
 {
 	int counter;
-	int cents = atoi(**(argv + 1));
-	(void)argc;
+	int cents = atoi(argv[1]);
+
+	if (argc < 2 || argc >= 3)
+		return (0);
 
 	while (cents / 25)
 	{
