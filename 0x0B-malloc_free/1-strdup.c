@@ -21,6 +21,8 @@ char *_strdup(char *str)
 	for (a = 0; a < i; a++)
 		*(s + a) = *(str + a);
 
+	*(s + a) = '\0';
+
 	if (s == NULL)
 		return (NULL);
 
