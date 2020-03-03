@@ -1,0 +1,15 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * *str_concat -Concatenates 2 strings.
+ * @s1: string where s1 & s2 will be concatenate.
+ * @s2: string.
+ * Return: Pointer to concatenated string.
+ */
+
+char *str_concat(char *s1, char *s2)
+{
+
+}
