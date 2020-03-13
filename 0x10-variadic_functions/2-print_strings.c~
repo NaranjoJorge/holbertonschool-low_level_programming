@@ -8,7 +8,7 @@
  * Return: Void.
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i, number;
 	va_list ls;
@@ -21,6 +21,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		number = va_arg(ls, unsigned int);
 		if (separator)
 		{
+			if (number == NULL)
+				
 			if (i < (n - 1))
 				printf("%d%s", number, separator);
 			else
