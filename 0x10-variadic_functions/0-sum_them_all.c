@@ -1,4 +1,4 @@
-/* #include <stdarg.h>, included in library */
+#include <stdarg.h>
 
 /**
  * sum_them_all-Sum of parameters.
@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		sum += va_arg(n, unsigned int);
+		sum += va_arg(ls, unsigned int);
 	}
 
 	va_end(ls);
