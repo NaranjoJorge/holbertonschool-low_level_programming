@@ -2,53 +2,59 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * fm_char -
+ * fm_char - print char
  * @ls:va_list
-  * Return:
+  * Return: void
  */
 void fm_char(va_list ls)
 {
 	char res;
+
 	res = va_arg(ls, int);
+
 	printf("%c", res);
 }
 /**
- * fm_int -
+ * fm_int - print int
  * @ls:va_list
- * Return:
+ * Return: void
  */
 
 void fm_int(va_list ls)
 {
-        int res;
-        res = va_arg(ls, int);
-        printf("%d", res);
+	int res;
+
+	res = va_arg(ls, int);
+	printf("%d", res);
 }
 /**
- * fm_float -
+ * fm_float - print float
  * @ls:va_list
- * Return:
+ * Return: void
  */
 
 void fm_float(va_list ls)
 {
-        float res;
-        res = va_arg(ls, double);
-        printf("%f", res);
+	float res;
+
+	res = va_arg(ls, double);
+	printf("%f", res);
 }
 /**
- * fm_string -
+ * fm_string - print string
  * @ls:va_list
- * Return:
+ * Return: void
  */
 
 void fm_string(va_list ls)
 {
-        char *res;
-        res = va_arg(ls, char*);
+	char *res;
+
+	res = va_arg(ls, char*);
+
 	if (res == '\0')
 		res = "(nil)";
-        printf("%s", res);
+	printf("%s", res);
 }
 
 /**
@@ -71,8 +77,8 @@ void print_all(const char * const format, ...)
 	int j;
 	va_list ls;
 	char *espacio = "";
-	va_start(ls, format);
 
+	va_start(ls, format);
 
 	while (format && format[i])
 	{
