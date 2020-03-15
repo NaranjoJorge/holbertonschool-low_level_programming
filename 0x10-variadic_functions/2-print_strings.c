@@ -21,10 +21,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		string = va_arg(ls, char*);
 
-		if (separator == NULL)
-		{
-			break;
-		}
 		if (separator)
 		{
 			if (string == NULL)
