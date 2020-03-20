@@ -1,0 +1,28 @@
+#include "lists.h"
+
+/**
+ * list_len - returns the number of elements in a linked list_t list.
+ * @h:pointer to linked list
+ * Return: size_t
+ */
+
+list_t *add_node_end(list_t **head, const char *str)
+{
+	int i = 0;
+	list_t *new, *temp;
+
+	new = malloc(sizeof(list_t));
+
+	new->strdup(str);
+
+	if (str == NULL)
+		return (NULL);
+
+	while(str[i] != '\0')
+		i++;
+
+	new->len = i;
+	new->next = NULL;
+
+	
+}
