@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - Adds new node at the end of linked list.
+ * add_node_end - Adds new node at the end of linked list.
  * @head:Dueble pointer to head
  * @str:char *
  * Return: list_t
@@ -14,15 +14,15 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new = malloc(sizeof(list_t));
 
-	if (new = NULL)
+	if (new == NULL)
 		return (NULL);
 
-	new->strdup(str);
+	new->str = strdup(str);
 
 	if (str == NULL)
 		return (NULL);
 
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 		i++;
 
 	new->len = i;
@@ -37,7 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	while (temp->next != NULL)
-		temp = temp -> next;
+		temp = temp->next;
 
 	temp->next = new;
 
