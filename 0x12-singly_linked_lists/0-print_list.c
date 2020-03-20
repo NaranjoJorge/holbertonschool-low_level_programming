@@ -6,14 +6,21 @@
  * Return: size_t
  */
 
-size_t list_len(const list_t *h)
+size_t print_list(const list_t *h)
 {
-	unsigned long int i = 0;
+	unsigned long int i;
 
-	while(h != NULL)
+	if (!h)
+	{
+		printf("[0] (nil)");
+	}
+
+	for(h != NULL)
 	{
 		h = h->next;
+		printf("[%i] %s\n", h->len, h->str);
 		i++;
 	}
+
 	return (i);
 }
