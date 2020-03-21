@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * add_node_end - Adds new node at the end of linked list.
@@ -18,9 +19,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new->str = strdup(str);
-
-	if (str == NULL)
-		return (NULL);
 
 	while (str[i] != '\0')
 		i++;
