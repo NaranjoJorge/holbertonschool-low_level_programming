@@ -1,0 +1,22 @@
+#include "lists.h"
+
+/**
+ * print_listint - Prints elements in structure listint & returns
+ * the number of nodes.
+ * @h: Pointer to listint
+ * Return: number of nodes in listint_t
+ */
+
+size_t print_listint(const listint_t *h)
+{
+	unsigned long int i;
+
+	while (h)
+	{
+		printf("%i\n", h->n);
+		h = h->next;
+		i++;
+	}
+
+	return (i);
+}
