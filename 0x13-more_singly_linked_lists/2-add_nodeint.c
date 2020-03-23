@@ -1,7 +1,5 @@
 #include "lists.h"
 
-/* error: return makes pointer from integer without a cast. When compiling */
-
 /**
  * add_nodeint - Add node at the beggining of listint_t and
  * returns its adress.
@@ -12,19 +10,21 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	(listint_t *new) = (listint_t *new)malloc(sizeof(listint_t));
+	listint_t *new = (listint_t *)malloc(sizeof(listint_t));
 
 	if (new == NULL)
 		return (NULL);
 
-	/*   */
-	while (*head)
-	{
 	new->n = n;
-	new->next = *head;
+
+	if (*head == NULL)
+	{
+		*head = new;
+		return (new);
 	}
 
+	new->next = *head;
 	*head = new;
 
-	return (n);
+	return (*head);
 }
