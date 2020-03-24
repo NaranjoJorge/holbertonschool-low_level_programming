@@ -1,8 +1,20 @@
 #include "lists.h"
 
 /**
- * list_len - returns the number of elements in a linked list_t list.
- * @h:pointer to linked list
- * Return: size_t
+ * add_node_end -
+ * @head:
+ * @str:
+ * Return:
  */
 
+list_t *add_node(list_t **head, const char *str)
+{
+	list_t *new;
+
+	new = malloc(sizeof(list_t));
+
+	if (new == NULL)
+		return(NULL);
+
+	
+}
