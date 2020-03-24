@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index -  
- * @head:Dueble pointer to head
- * @str:char *
- * Return: list_t
+ * get_nodeint_at_index - Returns node at index.
+ * @head: Linked list listint_t.
+ * @index: Unsigned int.
+ * Return: node at index.
  */
-get_nodeint_at_index
+
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
