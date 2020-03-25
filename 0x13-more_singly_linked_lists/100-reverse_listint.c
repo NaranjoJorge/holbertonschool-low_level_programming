@@ -19,15 +19,15 @@ listint_t *reverse_listint(listint_t **head)
 
 	if (head != NULL)
 	{
-		*prev = head;
-		head = *head->next;
+		prev = (*head);
+		(*head) = (*head)->next;
 		current = *head;
 		/* disconnecting 1st node from list*/
 		prev->next = NULL;
 
 		while (head != NULL)
 		{
-			*head = head->next;
+			(*head) = (*head)->next;
 			current->next = prev;
 			prev = current;
 			current = *head;
