@@ -17,8 +17,9 @@ unsigned int binary_to_uint(const char *b)
 	i = 0;
 	while (*(b + i))
 	{
-		if (*(b + i) == 1)
-			sum += (2 ** i);
+		sum <<= 1;
+		if (*(b + i) == '1')
+			sum += 1;
 
 		if ((*(b + i) != 1) && (*(b + i) != 0))
 			return (0);
