@@ -11,7 +11,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int i;
 	unsigned long int *flips, counter;
 
-	flips = n ^ m;
+	n = n ^ m;
+	flips = &n;
 
 	for(i = 0; *(flips + i); i++)
 	{
